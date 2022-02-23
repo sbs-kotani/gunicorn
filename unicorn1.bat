@@ -1,4 +1,4 @@
-git clone https://github.com/Še©‚Ìgithub–¼/postingprj.git
+git clone https://github.com/å„è‡ªã®githubå/postingprj.git
 python3 -m venv env
 source env/bin/activate
 
@@ -10,24 +10,24 @@ pip install gunicorn
 
 cd postingprj
 python manage.py runserver
-@@¨@SQLite‚ÌƒGƒ‰[
+ã€€ã€€â†’ã€€SQLiteã®ã‚¨ãƒ©ãƒ¼
 
 nano ~/.bash_profile
-@@ˆê”ÔÅŒã‚É@export LD_LIBRARY_PATH="/usr/local/lib"  ‚ğ“ü—Í
+ã€€ã€€ä¸€ç•ªæœ€å¾Œã«ã€€export LD_LIBRARY_PATH="/usr/local/lib"  ã‚’å…¥åŠ›
 source ~/.bash_profile
 
 nano postingprj/settings.py
-	ALLOWED_HOSTS = [g*h]@‚É•ÏX
-	STATICFILES_DIRS = [os.path.join(BASE_DIR, estaticf)]@‚ğíœ‚µAˆÈ‰º‚É•ÏX
-	STATIC_ROOT = '/usr/share/nginx/html/staticf
-	ˆÈ‰º‚ğ’Ç‰Á
+	ALLOWED_HOSTS = [â€œ*â€]ã€€ã«å¤‰æ›´
+	STATICFILES_DIRS = [os.path.join(BASE_DIR, â€˜staticâ€™)]ã€€ã‚’å‰Šé™¤ã—ã€ä»¥ä¸‹ã«å¤‰æ›´
+	STATIC_ROOT = '/usr/share/nginx/html/static'
+	ä»¥ä¸‹ã‚’è¿½åŠ 
 	MEDIA_ROOT = '/usr/share/nginx/html/media'
 	
 nano postingprj/urls.py
 	urlpatterns = [
-		path(esbsN/admin/', admin.site.urls),
-		path(esbsN/', top, name='top'),
-		path(esbsN/postingapp/', include('postingapp.urls')),
+		path(â€˜sbsN/admin/', admin.site.urls),
+		path(â€˜sbsN/', top, name='top'),
+		path(â€˜sbsN/postingapp/', include('postingapp.urls')),
 	] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) \
 	  + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
@@ -38,6 +38,6 @@ cd postingprj
 gunicorn --bind 127.0.0.1:800N postingprj.wsgi
 
 http://49.212.137.6/sbsN/
-	Å‰‚Ì‹N“®‚Ì‚İƒGƒ‰[‚Æ‚È‚é‚Ì‚ÅˆÈ‰º‚ğ’Ç‰Á
+	æœ€åˆã®èµ·å‹•æ™‚ã®ã¿ã‚¨ãƒ©ãƒ¼ã¨ãªã‚‹ã®ã§ä»¥ä¸‹ã‚’è¿½åŠ 
 	http://49.212.137.6/sbsN/postingapp/login/?next=/sbs3/
 
