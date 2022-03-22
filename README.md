@@ -2,9 +2,9 @@ git clone https://github.com/各自のgithub名/postingprj.git
 python3 -m venv env  
 source env/bin/activate  　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 
-pip install --upgrade pip  
-pip install django  
-pip install django_bootstrap5  　                                                                                                                     　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+pip install --upgrade pip  <br>
+pip install django  <br>
+pip install django_bootstrap5 <br> 　                                                                                                                     　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 pip install pillow <br>  　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 pip install gunicorn <br>  　　  
 
@@ -12,11 +12,11 @@ cd postingprj　 <br>  　　　　　　　　　　　　　　　　　　　
 python manage.py runserver　 <br>  　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 　　→　SQLiteのエラー　　 <br>  　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 
-nano ~/.bash_profile　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
-　　一番最後に　export LD_LIBRARY_PATH="/usr/local/lib"  を入力　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
-source ~/.bash_profile　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+nano ~/.bash_profile　　<br>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+　　一番最後に　export LD_LIBRARY_PATH="/usr/local/lib"  を入力　<br>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+source ~/.bash_profile　　<br>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 
-nano postingprj/settings.py
+nano postingprj/settings.py<br>
 	ALLOWED_HOSTS = [“*”]　に変更
 	STATICFILES_DIRS = [os.path.join(BASE_DIR, ‘static’)]　を削除し、以下に変更
 	STATIC_ROOT = '/usr/share/nginx/html/static'
