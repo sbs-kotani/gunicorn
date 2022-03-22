@@ -19,9 +19,9 @@ source ~/.bash_profile
 
 nano postingprj/settings.py  
 	ALLOWED_HOSTS = [“*”]　に変更  
-	STATICFILES_DIRS = [os.path.join(BASE_DIR, ‘static’)]　を削除し、以下に変更  
+	STATICFILES_DIRS = [os.path.join(BASE_DIR, ‘static’)]　を削除し、以下を追加  
 	STATIC_ROOT = '/usr/share/nginx/html/static'  
-	以下を追加  
+	MEDIA_ROOT = os.path.join(BASE_DIR, ‘media‘)　を削除し、以下を追加  
 	MEDIA_ROOT = '/usr/share/nginx/html/media'  
 	
 nano postingprj/urls.py  
