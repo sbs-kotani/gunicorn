@@ -5,12 +5,12 @@ source env/bin/activate  　　　　　　　　　　　　　　　　　　�
 pip install --upgrade pip  
 pip install django  
 pip install django_bootstrap5  　                                                                                                                     　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
-pip install pillow  　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
-pip install gunicorn  
+pip install pillow <br>  　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+pip install gunicorn <br>  　　  
 
-cd postingprj　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
-python manage.py runserver　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
-　　→　SQLiteのエラー　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+cd postingprj　 <br>  　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+python manage.py runserver　 <br>  　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+　　→　SQLiteのエラー　　 <br>  　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 
 nano ~/.bash_profile　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 　　一番最後に　export LD_LIBRARY_PATH="/usr/local/lib"  を入力　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
