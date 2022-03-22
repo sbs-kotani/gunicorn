@@ -40,3 +40,4 @@ gunicorn --bind 127.0.0.1:800N postingprj.wsgi
 http://49.212.137.6/sbsN/
 	最初の起動時のみエラーとなるので以下を追加
 	http://49.212.137.6/sbsN/postingapp/login/?next=/sbs3/
+
