@@ -23,22 +23,22 @@ nano postingprj/settings.py
 	以下を追加  
 	MEDIA_ROOT = '/usr/share/nginx/html/media'  
 	
-nano postingprj/urls.py
-	urlpatterns = [
-		path(‘sbsN/admin/', admin.site.urls),
-		path(‘sbsN/', top, name='top'),
-		path(‘sbsN/postingapp/', include('postingapp.urls')),
-	] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) \
-	  + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+nano postingprj/urls.py  
+	urlpatterns = [  
+		path(‘sbsN/admin/', admin.site.urls),  
+		path(‘sbsN/', top, name='top'),  
+		path(‘sbsN/postingapp/', include('postingapp.urls')),  
+	] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) \  
+	  + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)  
 
-cd ..
-sudo cp -r postingprj/media /usr/share/nginx/html
-sudo cp -r postingprj/static /usr/share/nginx/html
-cd postingprj
-gunicorn --bind 127.0.0.1:800N postingprj.wsgi
-
-http://49.212.137.6/sbsN/
-	最初の起動時のみエラーとなるので以下を追加
-	http://49.212.137.6/sbsN/postingapp/login/?next=/sbs3/
+cd ..  
+sudo cp -r postingprj/media /usr/share/nginx/html  
+sudo cp -r postingprj/static /usr/share/nginx/html  
+cd postingprj  
+gunicorn --bind 127.0.0.1:800N postingprj.wsgi  
+  
+http://49.212.137.6/sbsN/  
+	最初の起動時のみエラーとなるので以下を追加  
+	http://49.212.137.6/sbsN/postingapp/login/?next=/sbs3/  
 
 
