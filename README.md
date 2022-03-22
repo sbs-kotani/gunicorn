@@ -18,19 +18,19 @@ nano ~/.bash_profile
 source ~/.bash_profile  
 
 nano postingprj/settings.py  
-	ALLOWED_HOSTS = [“*”]　に変更  
-	STATICFILES_DIRS = [os.path.join(BASE_DIR, ‘static’)]　を削除し、以下を追加  
-	STATIC_ROOT = '/usr/share/nginx/html/static'  
-	MEDIA_ROOT = os.path.join(BASE_DIR, ‘media‘)　を削除し、以下を追加  
-	MEDIA_ROOT = '/usr/share/nginx/html/media'  
+　　ALLOWED_HOSTS = [“*”]　に変更  
+　　STATICFILES_DIRS = [os.path.join(BASE_DIR, ‘static’)]　を削除し、以下を追加  
+　　STATIC_ROOT = '/usr/share/nginx/html/static'  
+　　MEDIA_ROOT = os.path.join(BASE_DIR, ‘media‘)　を削除し、以下を追加  
+　　MEDIA_ROOT = '/usr/share/nginx/html/media'  
 	
 nano postingprj/urls.py  
-	urlpatterns = [  
-		path(‘sbsN/admin/', admin.site.urls),  
-		path(‘sbsN/', top, name='top'),  
-		path(‘sbsN/postingapp/', include('postingapp.urls')),  
-	] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) \  
-	  + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)  
+　　urlpatterns = [  
+　　path(‘sbsN/admin/', admin.site.urls),  
+　　path(‘sbsN/', top, name='top'),  
+　　path(‘sbsN/postingapp/', include('postingapp.urls')),  
+　　] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) \  
+　　+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)  
 
 cd ..  
 sudo cp -r postingprj/media /usr/share/nginx/html  
