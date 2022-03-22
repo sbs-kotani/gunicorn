@@ -1,8 +1,8 @@
-git clone https://github.com/各自のgithub名/postingprj.git　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
-python3 -m venv env　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
-source env/bin/activate　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+git clone https://github.com/各自のgithub名/postingprj.git                                                                                                
+python3 -m venv env                                                                                              
+source env/bin/activate                                                                                              　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 
-pip install --upgrade pip　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+pip install --upgrade pip                                                                                              　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 pip install django　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 pip install django_bootstrap5　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 pip install pillow　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
