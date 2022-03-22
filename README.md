@@ -1,20 +1,20 @@
-git clone https://github.com/各自のgithub名/postingprj.git
-python3 -m venv env
-source env/bin/activate
+git clone https://github.com/各自のgithub名/postingprj.git　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+python3 -m venv env　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+source env/bin/activate　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 
-pip install --upgrade pip
-pip install django
-pip install django_bootstrap5
-pip install pillow
-pip install gunicorn
+pip install --upgrade pip　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+pip install django　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+pip install django_bootstrap5　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+pip install pillow　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+pip install gunicorn　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 
-cd postingprj
-python manage.py runserver
-　　→　SQLiteのエラー
+cd postingprj　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+python manage.py runserver　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+　　→　SQLiteのエラー　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 
-nano ~/.bash_profile
-　　一番最後に　export LD_LIBRARY_PATH="/usr/local/lib"  を入力
-source ~/.bash_profile
+nano ~/.bash_profile　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+　　一番最後に　export LD_LIBRARY_PATH="/usr/local/lib"  を入力　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+source ~/.bash_profile　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 
 nano postingprj/settings.py
 	ALLOWED_HOSTS = [“*”]　に変更
