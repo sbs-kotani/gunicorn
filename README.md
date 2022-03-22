@@ -1,3 +1,4 @@
+sudo rm -rf  env  postingprj  
 git clone https://github.com/各自のgithub名/postingprj.git  
 python3 -m venv env  
 source env/bin/activate  
