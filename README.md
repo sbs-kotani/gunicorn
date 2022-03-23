@@ -32,7 +32,7 @@ nano postingprj/urls.py
 　　] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) \  
 　　+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)  
 
-cd ..  
+cd -    
 sudo cp -r postingprj/media /usr/share/nginx/html  
 sudo cp -r postingprj/static /usr/share/nginx/html  
 cd postingprj  
